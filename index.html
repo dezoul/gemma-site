@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 layout: default
 title:
@@ -9,42 +8,6 @@ team:
     titte: co-founder
     para: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ---
-=======
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8" />
-  <title></title>
-  <link href="https://fonts.googleapis.com/css?family=Caveat|Muli" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
-  <link rel="stylesheet" href="main.css" />
-</head>
-<body>
-  <header class="bg">
-    <div class="overlay">
-      <nav class="editable">
-        <h2>navigation</h2>
-        <a href="#">bob</a>
-        <a href="#">dave</a>
-        <a href="#">tim</a>
-        <a href="#">bruce</a>
-        <div>
-          <!-- social -->
-        </div>
-      </nav>
-      <div class="intro-box grid-spaceBetween">
-        <div class="col-6">
-          <h1 class="editable">title</h1>
-          <h2 class="editable">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h2>
-          <p class="right editable">keep scrolling</p>
-        </div>
-        <div class="col-5">
-          <img class="editable" src="https://picsum.photos/500/700/?random" alt="" />
-        </div>
-      </div>
-    </div>
-  </header>
->>>>>>> origin/master
   <section class="grid-center-middle">
     <div class="col-9_md-12 padded-5">
       <div class="editable">
@@ -91,7 +54,6 @@ team:
     </div>
   </section>
   <section class="skinny">
-<<<<<<< HEAD
     <h2 class="editable" > The Team</h2>
     {% for person in page.team %}
     <div class='grid-middle-spaceAround margin-bot-5'>
@@ -100,20 +62,12 @@ team:
       </div>
       <div class='col-5'>
         <img src="{{person.pic-2_path}}" alt="">
-=======
-    <h2 class="editable"> The Team</h2>
-    <div class='grid-middle-spaceAround margin-bot-5'>
-      <div class='col-5'>
-        <img src="https://picsum.photos/900/400/?random" alt="" />
-      </div>
-      <div class='col-5'>
-        <img src="https://picsum.photos/900/400/?random" alt="" />
->>>>>>> origin/master
       </div>
     </div>
     <h3> {{person.name}} </h3>
     <h4>{{person.title}}</h4>
     <p> {{person.para}}</p>
+    {% endfor %}
   </section>
 
   <section class="bg tall" style=background-image:url('https://picsum.photos/900/400/?random')>
@@ -125,8 +79,7 @@ team:
       <p class="editable">next</p>
     </div>
   </section>
-<<<<<<< HEAD
-=======
+
 
 
   <footer>
@@ -159,4 +112,3 @@ team:
   </footer>
 </body>
 </html>
->>>>>>> origin/master
