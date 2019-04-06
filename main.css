@@ -1,6 +1,8 @@
 *{
   padding: 0;
   margin: 0;
+  background-size: cover;
+  background-position: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -28,7 +30,7 @@ body{
 }
 
 
-header .overlay, section, footer{
+ section, footer{
   padding: 3%;
   padding-left: 9rem;
 
@@ -65,6 +67,18 @@ p{
 
 .center{
   text-align: center;
+}
+
+.flex-center{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 }
 
 .bg{
@@ -126,6 +140,9 @@ header{
   display: -ms-flexbox;
   display: flex;
 }
+header .overlay{
+  padding: 3% 9rem;
+}
 
 header nav{
   position: fixed;
@@ -147,14 +164,18 @@ header a{
   display: block;
 }
 
-.intro-box{
-  background-color: #fefefe;
-  padding: 9%;
-  position: relative;
+.intro-box {
+    background-color: #fefefe;
+    padding: 3% 3% 0;
+    position: relative;
+    margin: 3%6%;
+    width: 50%;
+    height: 33vw
 }
-.intro-box img{
-  position: absolute;
-  width: 30vw;
+
+.intro-box .banner-picture{
+  width: 100%;
+  height: 36vh;
 }
 
 
@@ -166,6 +187,7 @@ border: none;
 border-bottom: 1px solid #111;
 -webkit-appearance: none;
 }
+
 input:focus, textarea:focus{
   outline: none
 }
@@ -182,4 +204,33 @@ input[type=submit]{
   border-radius: 10px;
   width: 8rem;
     text-align: center;
+}
+
+/* portfolio list page */
+.port-pic{
+  padding-bottom: 70%;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* portfolio page */
+.port-pic{
+  border: 2vw solid white; 
+}
+.tall-pic{
+  padding-bottom: 200%;
+}
+.square-pic{
+  padding-bottom: 100%;
+}
+.short-pic{
+  padding-bottom: 50%;
+}
+
+/* md */
+@media all and (max-width:1024) {
+  .intro-box{
+   height:auto;
+  }
 }

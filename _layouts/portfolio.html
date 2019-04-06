@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<section>
+  <h2>{{page.title}}</h2>
+  <p>{{page.description}}</p>
+  <div class="grid">
+    {% for pic in page.picture %}
+    <div class="col-{{pic.width}} grid">
+      <div class="{{pic.height}} col-12 port-pic" style="background-image:url('{{pic.picture_path}}')"></div>
+
+    </div>
+    {% endfor %}
+  </div>
+
+</section>

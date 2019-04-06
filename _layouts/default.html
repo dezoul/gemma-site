@@ -5,14 +5,14 @@
   <title></title>
   <link href="https://fonts.googleapis.com/css?family=Caveat|Muli" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="/main.css">
 </head>
 <body>
   <header class="bg" style="background-image:url('{{page.banner_path}}')">
-    <div class="overlay">
+    <div class="overlay flex-center ">
       <nav class="editable">
         <h2>navigation</h2>
-        <a href="#">bob</a>
+        <a href="/portfolio">Portfolio</a>
         <a href="#">dave</a>
         <a href="#">tim</a>
         <a href="#">bruce</a>
@@ -23,13 +23,15 @@
         </div>
       </nav>
       <div class="intro-box grid-spaceBetween">
-        <div class="col-6">
-          <h1 class="editable">title</h1>
-          <h2 class="editable">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h2>
+        <div class="col-6_md-12 center">
+          <h1 class="editable">{{page.title}}</h1>
+          <h2 class="editable">{{page.banner-textarea}}</h2>
           <p class="right editable" >keep scrolling</p>
         </div>
-        <div class="col-5">
-          <img class="editable" src="https://picsum.photos/500/700/?random" alt="">
+        <div class="col-5_md-hidden">
+          <div class="banner-picture" style="background-image:url('{{page.banner-small-pic}}')">
+
+          </div>
         </div>
       </div>
     </div>

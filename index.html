@@ -1,6 +1,9 @@
 ---
 layout: default
-title:
+title: thingy
+banner_path: https://picsum.photos/1000/600/?random
+banner-textarea: Lorem ipsum dolor sit amet,
+banner-small-pic: https://picsum.photos/500/700/?random
 team:
   - name: Gemma
     pic-1_path: 'https://picsum.photos/300/400/?random'
@@ -13,6 +16,7 @@ team:
     titte: co-founder
     para: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ---
+
 
 <section class="grid-center-middle">
     <div class="col-9_md-12 padded-5">
@@ -48,13 +52,13 @@ team:
       <p>laborum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div class="col-9">
-      <img class="margin-bot-5 editable" src="https://picsum.photos/900/400/?random" alt="" />
+      <img class="margin-bot-5 editable" src="https://picsum.photos/1200/400/?random" alt="" />
       <div class="grid-spaceBetween">
         <div class="col-5">
-          <img class="editable" src="https://picsum.photos/300/900/?random" alt="" />
+          <img class="editable" src="https://picsum.photos/500/900/?random" alt="" />
         </div>
         <div class="col-5">
-          <img class="editable" src="https://picsum.photos/300/900/?random" alt="" />
+          <img class="editable" src="https://picsum.photos/500/900/?random" alt="" />
         </div>
       </div>
     </div>
@@ -79,7 +83,11 @@ team:
       <p> {{person.para}}</p>
     </div>
     {% endfor %}
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="grid-spaceBetween">
+      <a class="next col-1 center" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next col-1 center" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
   </div>
   </section>
 
@@ -92,34 +100,3 @@ team:
       <p class="editable">next</p>
     </div>
   </section>
-
-
-
-  <footer>
-    <div class="grid">
-      <form class="col-9_md-12 editable" action="index.html" method="post">
-        <input type="text" name="name" placeholder="Name" />
-        <input type="email" name="email" placeholder="Email" />
-        <input type="text" name="subject" placeholder="Subject" />
-        <input type="text" name="referal name" placeholder="Referrd by" />
-        <textarea name="name" rows="8" cols="80" placeholder="any extended notes that you wish to send"></textarea>
-        <input type="submit" value="Submit Form" />
-      </form>
-      <div class="col-3_md-12 editable">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </div>
-    <!-- inst widget -->
-    <div class="grid">
-      <div class="col-6">
-        <a href="#">somewhere</a>
-        <a href="#">insta</a>
-        <!-- face  -->
-        <!-- pintrest -->
-      </div>
-      <div class="col-6 right">
-        <a href="#top">back to the top</a>
-      </div>
-    </div>
-  </footer>
